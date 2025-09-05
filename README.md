@@ -214,7 +214,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 
 Para dúvidas, sugestões ou colaborações:
 - 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/markovian-musical-composition/issues)
-- 📧 **Email**: contact@markovian-music.org
+- 📧 **Email**: ieysimurra@gmail.com
 - 🌐 **Website**: https://markovian-musical-composition-gui.streamlit.app/
 
 ---
