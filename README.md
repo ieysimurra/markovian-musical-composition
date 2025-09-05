@@ -2,6 +2,15 @@
 
 Um sistema avançado de composição musical baseado em Cadeias de Markov com interface gráfica e suporte para múltiplos métodos de síntese de áudio.
 
+## 🌐 Aplicação Online / Live Application
+
+**🚀 Acesse a aplicação web aqui / Access the web app here:**  
+**https://markovian-musical-composition-gui.streamlit.app/**
+
+*A aplicação roda diretamente no navegador - não é necessário instalar nada! / The app runs directly in your browser - no installation needed!*
+
+---
+
 ## 🎵 Sobre o Projeto
 
 Este projeto implementa um sistema inteligente de composição musical que utiliza **Cadeias de Markov** para analisar arquivos de áudio existentes e gerar novo material sonoro. O sistema oferece três métodos distintos de síntese de áudio e duas interfaces de usuário para máxima flexibilidade.
@@ -23,7 +32,16 @@ Este projeto implementa um sistema inteligente de composição musical que utili
 
 ## 🚀 Instalação e Uso
 
-### Opção 1: Interface Desktop (Local)
+### Opção 1: Interface Web (Recomendado - Sem Instalação)
+
+**Simplesmente acesse:** https://markovian-musical-composition-gui.streamlit.app/
+
+1. Faça upload dos seus arquivos de áudio (WAV, MP3, FLAC, OGG, AIFF)
+2. Configure os parâmetros de análise
+3. Escolha o método de síntese e parâmetros
+4. Gere e baixe suas composições!
+
+### Opção 2: Interface Desktop (Local)
 
 #### Pré-requisitos
 ```bash
@@ -32,7 +50,9 @@ pip install numpy librosa matplotlib seaborn scikit-learn scipy soundfile pandas
 
 #### Execução
 ```bash
-python audioMarkov_gui_VFrame.py
+git clone https://github.com/yourusername/markovian-musical-composition.git
+cd markovian-musical-composition
+python src/audioMarkov_gui_VFrame.py
 ```
 
 A interface desktop oferece:
@@ -42,29 +62,17 @@ A interface desktop oferece:
 - Análises estatísticas completas
 - Exportação organizada em pastas
 
-### Opção 2: Interface Web (Streamlit)
+### Opção 3: Interface Streamlit Local
 
 #### Pré-requisitos
 ```bash
-pip install streamlit numpy librosa matplotlib seaborn scikit-learn scipy soundfile pandas
+pip install -r requirements-streamlit.txt
 ```
 
 #### Execução Local
 ```bash
-streamlit run markov_audio_streamlit.py
+streamlit run src/markov_audio_streamlit.py
 ```
-
-#### Deploy no Streamlit Cloud
-1. Faça fork deste repositório
-2. Conecte sua conta GitHub ao [Streamlit Cloud](https://streamlit.io/cloud)
-3. Deploy o arquivo `markov_audio_streamlit.py`
-
-A interface web oferece:
-- Interface responsiva e intuitiva
-- Upload direto de arquivos
-- Visualizações interativas
-- Download de resultados em ZIP
-- Compatibilidade com dispositivos móveis
 
 ## 📋 Como Usar
 
@@ -103,9 +111,9 @@ A interface web oferece:
 
 ### Arquivos Principais
 
-- `audioMarkov_gui_VFrame.py`: Interface desktop completa com Tkinter
-- `script11_Markov_Audio1GeraCompMult_GUI.py`: Engine principal de análise e síntese
-- `markov_audio_streamlit.py`: Interface web com Streamlit
+- `src/audioMarkov_gui_VFrame.py`: Interface desktop completa com Tkinter
+- `src/script11_Markov_Audio1GeraCompMult_GUI.py`: Engine principal de análise e síntese
+- `src/markov_audio_streamlit.py`: Interface web com Streamlit
 
 ### Classes Principais
 
@@ -172,6 +180,14 @@ O sistema baseia-se em princípios sólidos de:
 - **Teoria da Informação**: Modelagem probabilística
 - **Síntese de Áudio**: Múltiplas abordagens de geração sonora
 
+## 📚 Documentação
+
+- 📖 **[Guia de Início Rápido](QUICK_START.md)** - Comece em 5 minutos
+- 📋 **[Guia de Instalação](INSTALLATION.md)** - Instruções detalhadas
+- 🔧 **[Documentação da API](API_DOCUMENTATION.md)** - Referência completa
+- 💡 **[Exemplos de Uso](EXAMPLES.md)** - Casos práticos
+- 🌐 **[Links de Deploy](DEPLOYMENT.md)** - Acesso à aplicação online
+
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Por favor:
@@ -181,9 +197,11 @@ Contribuições são bem-vindas! Por favor:
 4. Push para a branch
 5. Abra um Pull Request
 
+Veja [CONTRIBUTING.md](CONTRIBUTING.md) para diretrizes detalhadas.
+
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## 🙏 Agradecimentos
 
@@ -194,8 +212,13 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para detalhes.
 
 ## 📞 Contato
 
-Para dúvidas, sugestões ou colaborações, abra uma issue no GitHub.
+Para dúvidas, sugestões ou colaborações:
+- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/markovian-musical-composition/issues)
+- 📧 **Email**: contact@markovian-music.org
+- 🌐 **Website**: https://markovian-musical-composition-gui.streamlit.app/
 
 ---
 
-**Transforme seus arquivos de áudio em novas composições com o poder das Cadeias de Markov!**
+**🎼 Transforme seus arquivos de áudio em novas composições com o poder das Cadeias de Markov!**
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://markovian-musical-composition-gui.streamlit.app/)
